@@ -331,7 +331,8 @@ var shinyFiles = (function() {
                 files: $.extend({}, files.files.toArray().map(function(d) {
         			return d;
     			})),
-    			root: files.root
+    			root: files.root,
+				id: Math.random()
     		};
         } else {
             var path = getPath($(modal).find('.sF-dirList .selected'));
